@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { BarChart3, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
