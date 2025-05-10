@@ -141,7 +141,7 @@ export function RepositoryDialog() {
                   {type === "frontend" ? "UI/UX components and pages" : "API endpoints and database models"}
                 </p>
                 <Button variant="ghost" size="sm" className="gap-1" asChild>
-                  <a href={`${repositories[type].url}/blob/main/README.md`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://drive.google.com/file/d/1xpzGRIdR4YbFGkKY_q3_cTiQ8JRF-Gjt/view?usp=sharing`} target="_blank" rel="noopener noreferrer">
                     Documentation
                     <ExternalLink className="h-3 w-3" />
                   </a>
