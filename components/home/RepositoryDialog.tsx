@@ -22,8 +22,6 @@ interface Repository {
 }
 
 export function RepositoryDialog() {
-  const [activeTab, setActiveTab] = useState("frontend")
-
   const repositories: Record<string, Repository> = {
     frontend: {
       name: "ASIA-API-FRONTEND",
@@ -74,7 +72,7 @@ export function RepositoryDialog() {
           </DialogTitle>
         </DialogHeader>
 
-        <Tabs defaultValue="frontend" className="mt-4" onValueChange={setActiveTab}>
+        <Tabs defaultValue="frontend" className="mt-4">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="frontend">Frontend</TabsTrigger>
             <TabsTrigger value="backend">Backend</TabsTrigger>

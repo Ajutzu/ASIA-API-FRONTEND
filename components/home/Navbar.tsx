@@ -1,18 +1,13 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { BarChart3, Moon, Sun, Github } from "lucide-react"
+import { BarChart3, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { RepositoryDialog } from "@/components/home/RepositoryDialog"
 
 export default function Navbar() {
     const { theme, setTheme } = useTheme()
-    const [mounted, setMounted] = useState(false)
-
-    useEffect(() => {
-        setMounted(true)
-    }, [])
 
     const toggleTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark")
