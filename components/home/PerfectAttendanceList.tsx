@@ -39,7 +39,7 @@ export default function PerfectAttendanceList() {
             <Skeleton className="h-12 w-full rounded-lg" />
           </div>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-4 h-74 pe-5 overflow-y-auto">
             {data?.map((student, index) => (
               <div key={index} className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -53,7 +53,7 @@ export default function PerfectAttendanceList() {
                   </div>
                   <div className="flex flex-col">
                     <span className="font-semibold leading-tight">{student.name}</span>
-                    <span className="text-xs text-muted-foreground">placeholder@email.com</span>
+                    <span className="text-xs text-muted-foreground">Perfect Attendance Award</span>
                   </div>
                 </div>
                 <div>
