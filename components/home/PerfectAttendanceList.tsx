@@ -53,7 +53,7 @@ export default function PerfectAttendanceList() {
                   </div>
                   <div className="flex flex-col">
                     <span className="font-semibold leading-tight">{student.name}</span>
-                    <span className="text-xs text-muted-foreground">Perfect Attendance Award</span>
+                    <span className="text-xs text-muted-foreground">No Absent</span>
                   </div>
                 </div>
                 <div>

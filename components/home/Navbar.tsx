@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-2 font-semibold">
                     <BarChart3 className="h-6 w-6" />
                     <span className="hidden md:inline-block">ASIA API PROJECT</span>
-                    <span className="md:hidden">ASIA API</span>
+                    <span className="text-sm md:hidden">ASIA API</span>
                 </div>
 
                 <div className="flex items-center gap-4">
