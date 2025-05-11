@@ -9,8 +9,7 @@ client/
 ├── app/              # Next.js app directory (pages and layouts)
 ├── components/       # Reusable React components
 ├── lib/             # Utility functions and shared logic
-├── public/          # Static assets
-└── styles/          # Global styles and Tailwind configuration
+└── public/          # Static assets
 ```
 
 ## Technologies Used
