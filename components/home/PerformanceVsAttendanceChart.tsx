@@ -12,6 +12,10 @@ interface StudentData {
   grade: number
 }
 
+interface ApiResponseStudent {
+  name: string
+}
+
 export default function AttendancePerformanceChart() {
   const [data, setData] = useState<StudentData[] | null>(null)
   const [loading, setLoading] = useState(true)
@@ -22,7 +26,7 @@ export default function AttendancePerformanceChart() {
       const response = await getPerfectAttendance()
 
       if (response.data) {
-        const transformedData = response.data.map((student: any) => ({
+        const transformedData = response.data.map((student: ApiResponseStudent) => ({
           name: student.name,
           attendance: Math.random() * 100, 
           grade: 70 + Math.random() * 30, 
